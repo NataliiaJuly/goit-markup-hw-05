@@ -1,7 +1,7 @@
 
 :root {
     --main-color: #4D5AE5; 
-    --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1)  ;
+    /* --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .list {
@@ -119,7 +119,7 @@ body {
     width: 100%;
     background-color: #404BBF;
     border-radius: 2px;
-    bottom: -2px;
+    bottom: -1px;
 }
 
 .item-portfolio {
@@ -246,8 +246,8 @@ gap: 24px;
     margin-right: auto;
     height: 56px;
     min-width: 169px;
-    transition: background-color var(--transition-duration-and-func),
-                box-shadow var(--transition-duration-and-func);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -389,18 +389,19 @@ padding-bottom: 120px;
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid #e7e9fc;
-    transition: background-color var(--transition-duration-and-func),
-                color var(--transition-duration-and-func),
-                border var(--transition-duration-and-func),
-                box-shadow var(--transition-duration-and-func);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: #404BBF;
+    background-color: #404bbf;
     color: #ffffff;
     border: 1px solid transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
+   
 }
 
 /* =========Портфоліо======== */
@@ -455,6 +456,7 @@ padding-bottom: 120px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    background-color: #4d5ae5; 
 }
 
 .list-portfolio {
@@ -473,7 +475,7 @@ padding-bottom: 120px;
     left: 0;
     top: 0;
     transform: translate(0, 100%);
-    transition: transform 250ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px 32px;
 }
 
@@ -519,9 +521,9 @@ padding-bottom: 120px;
     height: 100%;
     align-items: center;
     color: #8E8F99;
-    transition: fill var(--transition-duration-and-func),
-                color var(--transition-duration-and-func),
-                border var(--transition-duration-and-func);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -636,6 +638,8 @@ padding-bottom: 120px;
     display: inline;
 }
 
+/* ==========Бекдроп======= */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -646,17 +650,20 @@ padding-bottom: 120px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transition: opacity 250ms linear, visibility 250ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .modal {
     position: absolute;
     width: 408px;
-    height: 576px;
+    min-height: 576px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FCFCFC;;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-close-btn {
@@ -668,13 +675,22 @@ padding-bottom: 120px;
     right: 24px;
     width: 24px;
     height: 24px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0; 
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404bbf;
+    fill: #ffffff;
+    border: none; 
+    
+    
+}
 .is-hidden {
     opacity: 0;
     visibility: hidden;
