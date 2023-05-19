@@ -108,7 +108,7 @@ body {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
-    transition: color color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .item-studio::after {
@@ -521,11 +521,9 @@ padding-bottom: 120px;
     height: 100%;
     align-items: center;
     color: #8E8F99;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+}               
 
 .heading-customers {
     font-family: 'Roboto', sans-serif;
@@ -664,6 +662,10 @@ padding-bottom: 120px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.modal-cloce-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
