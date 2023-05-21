@@ -98,6 +98,16 @@ body {
     color: #2E2F42;
 }
 
+.item {
+    color: #2E2F42;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .item-studio {
     position: relative;
     color: #404BBF;
@@ -106,8 +116,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
@@ -457,7 +466,7 @@ padding-bottom: 120px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    background-color: #4d5ae5; 
+    /* background-color: #4d5ae5;  */
 }
 
 .list-portfolio {
@@ -480,6 +489,15 @@ padding-bottom: 120px;
     padding: 40px 32px;
 }
 
+.title-text-overlay {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    background-color: #4d5ae5; 
+}
 .portfolio-link-wrapper {
     position: relative;
     overflow: hidden;
